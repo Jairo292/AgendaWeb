@@ -1,0 +1,32 @@
+:root { --bg-soft: #f7f9fb; }
+html, body { height: 100%; }
+body {
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg-soft);
+  transition: background-color .25s ease, color .25s ease;
+}
+:root[data-bs-theme="dark"] body { background: var(--bs-body-bg); }
+.card { transition: background-color .25s ease, border-color .25s ease, color .25s ease, box-shadow .25s ease; }
+/* Calendario */
+.calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: .5rem; }
+.calendar-weekday { font-size: .75rem; color: var(--bs-secondary-color); text-transform: uppercase; letter-spacing: .04em; font-weight: 600; text-align: center; }
+.calendar-cell { background: var(--bs-body-bg); border-radius: .75rem; padding: .5rem .5rem .4rem; min-height: 92px; border: 1px solid var(--bs-border-color); position: relative; cursor: pointer; transition: box-shadow .2s ease, transform .05s ease, background-color .25s ease; }
+.calendar-cell:hover { box-shadow: 0 .35rem 1rem rgba(0,0,0,.07); }
+.calendar-cell .date-badge { font-size: .85rem; font-weight: 600; color: var(--bs-secondary-color); }
+.calendar-cell.out-month { opacity: .6; }
+.calendar-cell.today { border: 1px solid var(--bs-primary); }
+.calendar-cell.selected { outline: 2px dashed var(--bs-primary); outline-offset: 2px; }
+.occurrence-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 6px; border: 1px solid rgba(0,0,0,.08); }
+.task-item { border: 1px solid var(--bs-border-color); border-left: 6px solid var(--task-color, var(--bs-primary)); background: var(--bs-body-bg); border-radius: .75rem; padding: .6rem .75rem; transition: outline-color .2s ease, background-color .25s ease, border-color .25s ease; }
+.task-item:hover { outline: 3px solid color-mix(in oklab, var(--task-color, var(--bs-primary)) 18%, transparent); outline-offset: 2px; }
+.task-item.done { opacity: .7; text-decoration: line-through; }
+.task-date-badge { font-size: .75rem; background: color-mix(in oklab, var(--task-color, var(--bs-primary)) 14%, transparent); color: var(--bs-primary-text); border-radius: .5rem; padding: .1rem .5rem; }
+.date-chip { border: 1px solid var(--bs-border-color); border-radius: 999px; padding: .15rem .5rem; background: var(--bs-body-bg); }
+.date-chip button { border: none; background: transparent; color: var(--bs-danger); }
+#searchInput, #searchInputMobile { transition: box-shadow .2s ease, border-color .2s ease; }
+#searchInput:focus, #searchInputMobile:focus { box-shadow: 0 0 0 .2rem rgba(13,110,253,.15); border-color: var(--bs-primary); }
+/* Notas */
+.note-item { border: 1px dashed var(--bs-border-color); border-left: 6px solid var(--note-color, var(--bs-warning)); background: var(--bs-body-bg); border-radius: .75rem; padding: .55rem .75rem; transition: outline-color .2s ease, background-color .25s ease, border-color .25s ease; }
+.note-item:hover { outline: 3px solid color-mix(in oklab, var(--note-color, var(--bs-warning)) 18%, transparent); outline-offset: 2px; }
+.note-item.done { opacity: .7; text-decoration: line-through; }
+@media (max-width: 992px) { .calendar-cell { min-height: 76px; } }
