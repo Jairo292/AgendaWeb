@@ -1,0 +1,40 @@
+OrganizaPro — Descripción para galería / ficha de proyecto
+
+Breve descripción:
+OrganizaPro es una aplicación web de gestión personal de tareas, notas y calendario. Permite crear tareas con fechas y recurrencia, etiquetarlas por prioridad y color, filtrar por día desde un calendario visual, y administrar notas rápidas. Incluye búsqueda, temas (claro/oscuro), exportación/importación en JSON y autolimpieza de elementos antiguos.
+
+Precio (para mostrar en portafolio):
+- Precio de muestra en galería: $7,000 MXN (aprox.) — paquete: sitio estático / demo funcional.
+- Precio estimado para versión multi‑usuario con backend y autenticación: ~25,000 MXN (paquete recomendado para mercado)
+- Precio aproximado para versión profesional (offline sync, pruebas, soporte): 40,000–80,000+ MXN
+
+Hecho con:
+- HTML5, CSS3, JavaScript (ES6+)
+- Bootstrap 5 + Bootstrap Icons
+- Almacenamiento local: `localStorage` (actualmente front‑only, sin servidor)
+
+Qué se le puede agregar (mejoras / alcance comercial):
+- Backend y API REST (Node.js/Express, Django, etc.) + base de datos relacional (PostgreSQL) o NoSQL (Firebase/Firestore)
+- Autenticación de usuarios (JWT / OAuth / Firebase Auth)
+- Sincronización y almacenamiento en la nube (soporte multi‑dispositivo)
+- PWA (instalable, offline más robusto, service workers)
+- Notificaciones push (recordatorios), integración con Google Calendar / iCal
+- Exportación avanzada (CSV, iCal) e importadores para otras plataformas
+- Manejo de conflictos y sincronización offline‑first
+- Pruebas automáticas, CI/CD y despliegue en Vercel/Netlify/Heroku/Azure
+- Internacionalización (i18n) y mejoras de accesibilidad (a11y)
+
+Entrega sugerida para paquete estándar (~25k MXN):
+- API + BD básica (usuarios, tareas, notas)
+- Autenticación (registro, login, reset)
+- Integración front→API con migración de datos desde `localStorage`
+- PWA básico y despliegue en hosting (documentación incluida)
+- Tests básicos y guía de operación/despliegue
+
+Notas para la ficha / texto de galería:
+- Incluir captura principal (pantalla del calendario) y 1–2 miniaturas.
+- Botones: “Ver en web” (demo) y “Repositorio/GitHub”.
+- Resaltar: privacidad (sin servidor en demo), funcionalidades de recurrencia y export/import.
+
+Contacto / CTA:
+Para desarrollos a medida, integración con servicios externos o una versión multi‑usuario, contáctame para cotización detallada y plan de entregables.
